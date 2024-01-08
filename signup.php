@@ -1,4 +1,4 @@
-<?php 
+<?php include 'index.html';
 
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
