@@ -1,33 +1,180 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Salsa', cursive;
+}
+.wrapper{
+    max-width: 75%;
+    margin: auto;
+}
+.wrapper > p,
+.wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
     
-  </head>
-  <body>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="su.jpg" alt="">
-         
-           </div>
-        </div>
-      </div>
+}
+.wrapper >h1{
+    letter-spacing: 3px;
+}
+.accordion{
+    background-color: white;
+    color: rgba(0, 0,0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active,
+.accordion:hover{
+    background-color: #f1f7f5;
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    padding: 0 2rem 2.5rem 2rem;
+}
 
+.panel p{
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+}
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+.faq:active{
+    border: none;
+}
+body{
+  background-color:	#e0ebeb;
+}
+
+    </style>
+</head>
+
+<body>
+  <div class="wrapper">
   
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+      <button class="accordion">
+        What is CodersPad?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="panel">
+        <p>
+          CodersPad application basically design for technology related articles, how to start basic web development.
+          People can be starts with career in IT field on different domain.
+          Spefically its an application of guideline of people.
+        </p>
+      </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+
+
+
+    <div class="faq">
+      <button class="accordion">
+        Which Services CodersPad provided?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="panel">
+        <p>
+          CodersPad provided a numereous opportunity to begineer starts with different career opportunity.
+          Such as "Full Stack, Cloud computing, IOT, web development and much more."
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <div class="faq">
+      <button class="accordion">
+        How to find articles in CodersPad?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="panel">
+        <p>
+          You just click on the topics bar in navigation then you are able to see the articles regarding Technology and web development.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="faq">
+      <button class="accordion">
+        Do we charge any money to see the guidelines?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="panel">
+        <p>
+         As of now you don't need to charge money, its totally free of cost website.
+
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="faq">
+      <button class="accordion">
+        How I connect you?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="panel">
+        <p>
+          Its very easy.You just need to visit our contact us page and if you have any queries regarding your issue or others you can fill that
+          we will look in your issue and providing best service.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+for(i=0 ; i < acc.length;i++){
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    this.parentElement.classList.toggle("active");
+    var panel= this.nextElementSibling;
+    if(panel.style.display === "block"){
+      panel.style.display="none";
+    }else{
+      panel.style.display ="block";
+    }
+  });
+}
+
+  </script>
+</body>
+
 </html>

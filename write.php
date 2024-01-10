@@ -4,19 +4,26 @@
 $con = mysqli_connect('localhost', 'root', '','test');
 // get the post records
 $email = $_POST['email'];
-$password = $_POST['password'];
+$name = $_POST['name'];
+$message=$_POST['message'];
 
 
 
 // database insert SQL code
-$sql = "INSERT INTO `login_page` (`id`, `email`, `password`) VALUES ('0', '$email ', '$password')";
+$sql = "INSERT INTO `write` (`email`, `name`, `message`) VALUES ('$email', '$name ', '$message')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
-
-if($rs)
+if(empty($email)){
+    echo "Could you please enter your email?";
+}
+elseif($rs)
 {
-	echo "Greeting! You have been login suceessfully.";
+	echo "Gracious! Thank you for your valuable feedback for us.";
+}
+
+else{
+    
 }
 
 
